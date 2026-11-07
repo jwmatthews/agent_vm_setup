@@ -1,0 +1,16 @@
+#cloud-config
+hostname: agent-01
+fqdn: agent-01.home.replaceme.com
+prefer_fqdn_over_hostname: false
+users:
+  - name: jmatthews
+    groups: wheel
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-ed25519 replaceme example@example.com
+ssh_pwauth: false
+packages:
+  - qemu-guest-agent
+runcmd:
+  - systemctl enable --now qemu-guest-agent

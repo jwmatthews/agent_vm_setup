@@ -1,0 +1,10 @@
+[Unit]
+Description=Rex personal server
+
+[Service]
+ExecStart=/usr/bin/rex server run --tailscale --log-format text
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
