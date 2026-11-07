@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-# I think have Unifi network configure a fixed IP and DNS for the below MAC
+# I have a Unifi network configure a fixed IP and DNS for the below MAC
 virt-install \
   --name agent-01 \
   --memory 16384 --vcpus 10 --cpu host-passthrough \
