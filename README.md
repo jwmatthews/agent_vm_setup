@@ -1,5 +1,6 @@
 # Overview
-This is a walk through of how I setup a Linux VM for my coding agents with Rex
+This is a walk through of how I setup a Linux VM for my coding agents with Rex so that I may interact with the coding agents from my iPhone and/or speak with voice to GrokBot and have it direct the coding agents on the VM even while away from my home network.  
+
 - Host: Fedora 44
 - VM: Fedora 45
 
